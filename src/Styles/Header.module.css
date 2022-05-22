@@ -1,0 +1,40 @@
+.containerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 75rem;
+  width: 100%;
+  padding:0 0.7rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: center;
+  height: 6rem;
+}
+
+.col1Nav, .col2Nav {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap:2rem;
+  align-items: center;
+}
+
+.col1Nav {
+  justify-content: flex-end;
+}
+.col2Nav {
+  justify-content: flex-start;
+}
+
+
+.logo {
+
+  margin: 0 auto;
+  width: 3rem;
+  text-align: center;
+}
