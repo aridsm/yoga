@@ -8,10 +8,16 @@
 .App {
   background: #FAFAF7;
   --cor-1: #FAFAF7;
-  --cor-2: #DFF2EC;
-  --cor-3: #F2F2CD;
-  --cor-4: #F4E7F6;
+  --cor-2: #d4e9e2;
+  --cor-3: #ececc5;
+  --cor-4: #eddef0;
   --cor-5: #202325;
+  --text-1: #644D68;
+  --text-2: #45695E;
+  --text-3: #7E7A54;
+  --sombra-1:#ddb4e3b3;
+  --sombra-2: #b5e1d4cc;
+  --sombra-3:#7e7a5440;
   font-family: 'Quicksand', sans-serif;
   font-size: 0.9rem;
   color: var(--cor-5);
@@ -44,4 +50,11 @@ button {
 .btnPreto:hover {
   background: var(--cor-4);
   color: #644D68
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 55rem;
+  width: 100%;
+  padding: 4rem 0.7rem;
 }

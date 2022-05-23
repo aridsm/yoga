@@ -4,7 +4,7 @@ import styles from '../Styles/Caracteristicas.module.css'
 
 const Caracteristicas = () => {
   return (
-    <section className={styles.caracteristicas}>
+    <section className={`container ${styles.caracteristicas}`}>
       <div className={styles.img}>
         <img src={img} alt='mulher se alongando'></img>
       </div>

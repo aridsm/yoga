@@ -4,7 +4,7 @@ import fotoEntrada from '../assets/entrada.jpg'
 
 const Entrada = () => {
   return (
-    <section className={styles.entrada}>
+    <section className={`container ${styles.entrada}`}>
       <div className={styles.endereco}>
         <span>Lorem Ipsum - IP</span>
         <span>Dolor sit - Lorem, 111</span>

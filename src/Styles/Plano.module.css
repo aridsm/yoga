@@ -1,0 +1,49 @@
+.itemPlano {
+  list-style: none;
+  border-radius: 0.5rem;  
+  text-align: center;
+  padding: 1.5rem;
+
+}
+
+.modalidade {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.precos {
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.rs {
+  font-size: 1.2rem;
+}
+
+.valor {
+  font-size: 2rem;
+}
+
+.aomes {
+  position: absolute;
+  display: block;
+  right:3.5rem;
+  bottom:-1rem;
+  opacity: 0.7;
+}
+
+.lista {
+  margin-bottom: 1rem;
+}
+
+.lista li {
+  list-style: none;
+  padding: 0.6rem 0
+}
+
+.btnAssinar:hover {
+  background: var(--cor-5) !important;
+  color: var(--cor-1) !important
+}

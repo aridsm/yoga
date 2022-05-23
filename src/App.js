@@ -4,6 +4,9 @@ import Footer from './Componentes/Footer'
 import Entrada from './Componentes/Entrada';
 import Caracteristicas from './Componentes/Caracteristicas';
 import Modalidades from './Componentes/Modalidades';
+import Planos from './Componentes/Planos';
+import Frase from './Componentes/Frase';
+import Instrutores from './Componentes/Instrutores';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
     <Entrada />
     <Caracteristicas />
     <Modalidades />
+    <Planos />
+    <Frase />
+    <Instrutores />
     <Footer />
     </div>
   )

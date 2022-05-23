@@ -1,0 +1,38 @@
+.fraseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img {
+  max-width:25rem;
+  width: 100%;
+  border-top-right-radius: 7rem;
+  overflow: hidden;
+}
+
+.img img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.citation {
+  max-width: 25rem;
+}
+
+.citation figcaption {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.citation figcaption::before {
+  content: '';
+  height: 1px;
+  width: 15px;
+  background: var(--cor-5);
+  display: inline-block;
+  position: relative;
+  top: -.2rem;
+  margin-right: 0.5rem;
+}
