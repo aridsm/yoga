@@ -30,16 +30,19 @@
   grid-column: 1;
   grid-row: 1/3;
   margin: auto;
-  background-color: var(--cor-4);
   color: var(--text-1);
+  background: radial-gradient(70% 100% at 50% 0%, var(--cor-4) 0%, #E4BEEA 100%);
+  
 }
 .ul li:nth-of-type(2) {
   color: var(--text-2);
-  background-color: var(--cor-2);
+  background: radial-gradient(70% 100% at 50% 0%, var(--cor-2) 0%, #B1DFD0 100%);
+
 }
 .ul li:nth-of-type(3) {
   color: var(--text-3);
-  background-color: var(--cor-3);
+  background: radial-gradient(70% 100% at 50% 0%, var(--cor-3) 0%, #ECEE9E 100%);
+
 }
 
 .ul li:hover {

@@ -36,15 +36,15 @@
 }
 
 .ul li:nth-of-type(1) {
-  background: var(--cor-4);
+  background: radial-gradient(70% 100% at 50% 0%, var(--cor-4) 0%, #E4BEEA 100%);
   color: var(--text-1);
 }
 .ul li:nth-of-type(2) {
   color: var(--text-3);
-  background: var(--cor-3);
-
+  background: radial-gradient(70% 100% at 50% 0%, var(--cor-3) 0%, #ECEE9E 100%);
 }
 .ul li:nth-of-type(3) {
   background: var(--cor-2);
   color: var(--text-2);
+  background: radial-gradient(70% 100% at 50% 0%, var(--cor-2) 0%, #B1DFD0 100%);
 }
