@@ -37,11 +37,12 @@ const instrutores = [
 const Instrutores = () => {
   return (
     <section className={`container ${styles.instrutores}`}>
-      <ul>
+      <h2>Conheça os instrutores</h2>
+      <ul className={styles.listaInstrutores}>
      {instrutores.map(instrutor => (
        <li key={instrutor.nome}>
-         <img src={instrutor.img} alt={instrutor.nome}></img>
-         <p>{instrutor.nome}fd</p>
+         <img src={instrutor.img} alt={instrutor.nome} className={styles.img}></img>
+         <p className={styles.nome}>{instrutor.nome}</p>
          <p>{instrutor.descricao}dsd</p>
        </li>
      ))}

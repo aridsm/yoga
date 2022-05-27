@@ -13,8 +13,10 @@ const Planos = () => {
         </div>
       </header>
       <ul className={styles.listaPlanos}>
-        <Plano preco='159,00' cor='#d4e9e2' textColor='#45695E' shadowColor='#b5e1d4cc' plano='Yoga'/>
-        <Plano preco='249,00' cor='#eddef0' textColor='#644D68' shadowColor='#ddb4e3b3' plano='Completo'/>  <Plano preco='129,00' cor='#ececc5' textColor='#7E7A54' shadowColor='#7e7a5440' plano='Pilates'/>
+        <Plano preco='159,00' plano='Yoga'/>
+        <Plano preco='319,00' plano='Completo'/>  
+        <Plano preco='129,00' plano='Pilates'/>
+        <Plano preco='109,00' plano='Meditaçao'/>
       </ul>
       <a href='/' className={`btnPreto ${styles.linkComecar}`}>Comece o teste de 7 dias gratis</a>
     </section>

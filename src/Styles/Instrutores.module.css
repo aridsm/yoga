@@ -1,0 +1,33 @@
+.instrutores h2 {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.instrutores {
+  margin-bottom: 4rem;
+}
+.listaInstrutores {
+  display: flex;
+  overflow: hidden;
+  cursor: grab;
+  padding: 1rem 0;
+  position: relative;
+}
+.listaInstrutores li {
+  list-style: none;
+  text-align: center;
+}
+
+.img {
+  border-radius: 50%;
+  width: 9rem;
+}
+
+.listaInstrutores li + li{
+  margin-left: 4rem
+}
+
+.nome {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0.2rem 0.5rem;
+}

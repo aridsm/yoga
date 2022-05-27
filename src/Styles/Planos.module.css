@@ -1,7 +1,7 @@
 .listaPlanos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  display: flex;
+  overflow: hidden;
+  padding-top: 2rem;
 }
 
 .header {

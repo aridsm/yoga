@@ -18,12 +18,11 @@
 }
 
 .ul {
-  margin-left: -3rem;
+  margin-left: -2rem;
 }
 
 .ul li {
   padding: 1.2rem 2rem;
-  border-radius: 4rem;
   list-style: none;
 }
 
@@ -33,22 +32,19 @@
 }
 
 .ul li + li {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .ul li:nth-of-type(1) {
   background: var(--cor-4);
   color: var(--text-1);
-  box-shadow: 2px 2px 0 0 var(--sombra-1);
 }
 .ul li:nth-of-type(2) {
-  color: var(--text-2);
+  color: var(--text-3);
   background: var(--cor-3);
-  box-shadow: 2px 2px 0 0 var(--sombra-3);
 
 }
 .ul li:nth-of-type(3) {
   background: var(--cor-2);
-  color: var(--text-3);
-  box-shadow: 2px 2px 0 0 var(--sombra-2);
+  color: var(--text-2);
 }

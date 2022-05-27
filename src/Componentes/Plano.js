@@ -1,9 +1,9 @@
 import styles from '../Styles/Plano.module.css'
 import React from 'react'
 
-const Plano = ({preco, cor, textColor, shadowColor, plano}) => {
+const Plano = ({preco, plano}) => {
   return (
-    <li className={styles.itemPlano} style={{background: cor, color: textColor, boxShadow: `2px 2px 0 0 ${shadowColor}`}}>
+    <li className={styles.itemPlano}>
         <h3 className={styles.modalidade}>{plano}</h3>
         <div className={styles.precos}>
           <span className={styles.rs}>R$</span>
@@ -18,7 +18,7 @@ const Plano = ({preco, cor, textColor, shadowColor, plano}) => {
           <li>Sed commodo urna in congue feugiat</li>
           <li>Suspendisse faucibus turpis</li>
         </ul>
-        <a href='/' className={`btnPreto ${styles.btnAssinar}`} style={{background: textColor, color: cor}}>Assinar plano</a>
+        <a href='/' className={`btnPreto ${styles.btnAssinar}`}>Assinar plano</a>
     </li>
   )
 }
