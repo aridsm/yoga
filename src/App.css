@@ -9,9 +9,9 @@
 .App {
   background: #FAFAF7;
   --cor-1: #FAFAF7;
-  --cor-2: #cfe3eb;
-  --cor-3: #f7f7cb;
-  --cor-4: #ead6ee;
+  --cor-2: #e2f3fa;
+  --cor-3: #fafad1;
+  --cor-4: #f4e1f8;
   --cor-5: #202325;
   --text-1: #583f5c;
   --text-2: #35584e;
@@ -61,5 +61,5 @@ button {
   margin: 0 auto;
   max-width: 55rem;
   width: 100%;
-  padding: 4rem 0.7rem;
+  padding: 5rem 0.7rem;
 }

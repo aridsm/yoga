@@ -1,29 +1,51 @@
 .instrutores h2 {
-  margin-bottom: 4rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
+
 .instrutores {
   margin-bottom: 4rem;
 }
+
+.containerInstrutores {
+  overflow: hidden;
+}
+
 .listaInstrutores {
   display: flex;
-  overflow: hidden;
-  cursor: grab;
   padding: 1rem 0;
   position: relative;
+  transition: .3s;
+
 }
+
 .listaInstrutores li {
   list-style: none;
   text-align: center;
+  min-width: 20%;
+  margin: 0 calc(20% / 8);
+  padding: 1rem 0.5rem;
+  transition: .2s;
+}
+
+.listaInstrutores li:hover {
+  background: var(--cor-5);
+  color: var(--cor-1);
+}
+
+.btns {
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+.btns button {
+  padding: 0 0.5rem
 }
 
 .img {
   border-radius: 50%;
-  width: 9rem;
-}
-
-.listaInstrutores li + li{
-  margin-left: 4rem
+  width: 8.5rem;
 }
 
 .nome {

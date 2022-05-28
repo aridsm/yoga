@@ -1,7 +1,8 @@
 .listaPlanos {
   display: flex;
-  overflow: hidden;
   padding-top: 2rem;
+  position: relative;
+  transition: .3s;
 }
 
 .header {
@@ -14,9 +15,15 @@
 .btns button {
   padding: 0 0.5rem
 }
+
 .planos {
   text-align: center;
 }
+
 .linkComecar {
   margin-top: 4rem;
+}
+
+.containerPlanos {
+  overflow: hidden;
 }

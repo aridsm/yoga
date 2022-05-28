@@ -1,4 +1,5 @@
 import React from 'react'
+import useSlide from '../CustomHooks/useSlide'
 import styles from '../Styles/Instrutores.module.css'
 
 const instrutores = [
@@ -34,19 +35,32 @@ const instrutores = [
   },
 ]
 
+
+
 const Instrutores = () => {
+
+  const { slideNext, slidePrev, positionWidth, containerSlideRef } = useSlide(4)
+
   return (
     <section className={`container ${styles.instrutores}`}>
       <h2>Conheça os instrutores</h2>
-      <ul className={styles.listaInstrutores}>
-     {instrutores.map(instrutor => (
-       <li key={instrutor.nome}>
-         <img src={instrutor.img} alt={instrutor.nome} className={styles.img}></img>
-         <p className={styles.nome}>{instrutor.nome}</p>
-         <p>{instrutor.descricao}dsd</p>
-       </li>
-     ))}
-     </ul>
+      <div className={styles.btns}>
+        <button onClick={slidePrev}>Anterior</button>
+        <button onClick={slideNext}>Proximo</button>
+      </div>
+      <div className={styles.containerInstrutores}>
+        <ul className={styles.listaInstrutores} ref={containerSlideRef} style={{ left: `${positionWidth}px` }} >
+          {instrutores.map(instrutor => (
+            <li key={instrutor.nome}>
+              <a href='/'>
+                <img src={instrutor.img} alt={instrutor.nome} className={styles.img}></img>
+                <p className={styles.nome}>{instrutor.nome}</p>
+                <p>{instrutor.descricao}dsd</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )
 }
