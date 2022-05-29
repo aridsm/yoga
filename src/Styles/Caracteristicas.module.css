@@ -84,3 +84,20 @@
   color: var(--text-2);
   background: radial-gradient(70% 100% at 50% 0%, var(--cor-2) 0%, #B1DFD0 100%);
 }
+
+@media all and (max-width: 800px) {
+  .caracteristicas {
+    flex-direction: column;
+  }
+
+  .img {
+    width: 15rem;
+    height: 23rem;
+  }
+
+  .ul {
+    margin-left: 0;
+    margin-top: 4rem;
+  }
+
+}

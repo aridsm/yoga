@@ -92,3 +92,17 @@
   background: var(--cor-5);
   color: var(--cor-1)
 }
+
+@media all and (max-width: 800px) {
+  .itemPlano {
+    min-width: 45%;
+    margin: 0 calc(10% / 4)
+  }
+}
+
+@media all and (max-width: 550px) {
+  .itemPlano {
+    min-width: 90%;
+    margin: 0 calc(10% / 2)
+  }
+}

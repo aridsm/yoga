@@ -140,3 +140,29 @@
   background: radial-gradient(70% 100% at 50% 0%, var(--cor-4) 0%, #E4BEEA 100%);
   color: var(--text-1)
 }
+
+@media all and (max-width: 800px) {
+  .entrada {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .imgContainer {
+    order: -1;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .img {
+    width: 15rem;
+    height: 23rem;
+    margin: 0 auto;
+  }
+
+  .titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+}

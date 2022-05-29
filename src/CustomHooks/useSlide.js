@@ -4,19 +4,18 @@ const useSlide = (itensLength) => {
 
   const [positionWidth, setPositionWidth] = React.useState(0)
   const [slidePosition, setSlidePosition] = React.useState(0)
-  const [itensAtATime, setItensAtATime] = React.useState(itensLength)
   const containerSlideRef = React.useRef()
 
   React.useEffect(() => {
     const { width } = containerSlideRef.current.getBoundingClientRect()
-    setPositionWidth(-((width / itensAtATime) * slidePosition))
-  }, [slidePosition, itensAtATime])
+    setPositionWidth(-((width / itensLength) * slidePosition))
+  }, [slidePosition, itensLength])
 
   const slideNext = React.useCallback(() => {
-    if (slidePosition < containerSlideRef.current.children.length - itensAtATime) {
+    if (slidePosition < containerSlideRef.current.children.length - itensLength) {
       setSlidePosition(slidePosition + 1)
     }
-  }, [slidePosition, itensAtATime])
+  }, [slidePosition, itensLength])
 
 
   const slidePrev = React.useCallback(() => {
@@ -26,7 +25,7 @@ const useSlide = (itensLength) => {
 
   }, [slidePosition])
 
-  return { slideNext, slidePrev, positionWidth, containerSlideRef }
+  return { slideNext, slidePrev, positionWidth, containerSlideRef, setSlidePosition }
 }
 
 export default useSlide

@@ -63,3 +63,21 @@ button {
   width: 100%;
   padding: 5rem 0.7rem;
 }
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAF7;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background: #202325;
+  border: 3px solid #fafaf7
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2f3336;
+}

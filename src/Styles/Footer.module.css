@@ -8,7 +8,7 @@
   grid-template-columns: repeat(3, 15rem);
   justify-content: space-between;
   align-items: start;
-  grid-gap:2rem;
+  grid-gap: 1rem;
   padding: 2rem 0.7rem
 }
 
@@ -24,11 +24,12 @@
   margin-bottom: 0.5rem;
 }
 
-.menu nav ul li > a, .itensFooter > * {
+.menu nav ul li>a,
+.itensFooter>* {
   padding: 0.2rem;
 }
 
-.itensFooter > * {
+.itensFooter>* {
   display: block;
 }
 
@@ -46,6 +47,33 @@
   text-align: center;
 }
 
-.links a + a {
+.links a+a {
   margin-left: 1rem;
+}
+
+@media all and (max-width: 800px) {
+
+  .containerFooter {
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 2rem
+  }
+
+  .menu nav ul {
+    grid-template-columns: auto;
+  }
+
+  .copy {
+    flex-direction: column;
+    grid-row: unset;
+  }
+
+  .by {
+    grid-row: unset
+  }
+
+  .links {
+    margin-top: .5rem;
+  }
 }

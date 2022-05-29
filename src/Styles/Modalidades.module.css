@@ -78,3 +78,24 @@
   right: 0rem;
   top: 0.5rem
 }
+
+
+@media all and (max-width: 800px) {
+  .modalidades {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .textos h2 {
+    font-size: 2rem;
+    max-width: 20rem;
+  }
+
+  .ul {
+    margin-top: 4rem;
+  }
+
+  .ul li {
+    text-align: left;
+  }
+}

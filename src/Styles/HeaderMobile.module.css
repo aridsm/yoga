@@ -1,0 +1,25 @@
+.logo {
+  margin: 0 auto;
+}
+
+.btnComeceAgora {
+  justify-self: end;
+}
+
+.btnMenu {
+  justify-self: start;
+}
+
+.navItens {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--cor-5);
+  color: var(--cor-1);
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+  text-align: center;
+  padding: 2rem 3rem;
+  z-index: 9999;
+}
