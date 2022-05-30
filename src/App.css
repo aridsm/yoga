@@ -81,3 +81,10 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: #2f3336;
 }
+
+@media all and (max-width: 400px) {
+  .btnPreto {
+    padding: 0.6rem 0.7rem;
+    font-size: 0.8rem;
+  }
+}

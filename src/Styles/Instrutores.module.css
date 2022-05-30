@@ -53,3 +53,24 @@
   font-size: 1.1rem;
   margin: 0.2rem 0.5rem;
 }
+
+@media all and (max-width: 800px) {
+  .listaInstrutores li {
+    min-width: 30%;
+    margin: 0 calc(10% / 6)
+  }
+}
+
+@media all and (max-width: 550px) {
+  .listaInstrutores li {
+    min-width: 45%;
+    margin: 0 calc(10% / 4)
+  }
+}
+
+@media all and (max-width: 390px) {
+  .listaInstrutores li {
+    min-width: 90%;
+    margin: 0 calc(10% / 2)
+  }
+}

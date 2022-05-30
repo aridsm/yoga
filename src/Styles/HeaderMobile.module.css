@@ -2,12 +2,19 @@
   margin: 0 auto;
 }
 
+.logo img {
+  width: 2rem
+}
+
 .btnComeceAgora {
   justify-self: end;
 }
 
 .btnMenu {
   justify-self: start;
+  height: 2rem;
+  position: relative;
+  z-index: 99999;
 }
 
 .navItens {
@@ -22,4 +29,23 @@
   text-align: center;
   padding: 2rem 3rem;
   z-index: 9999;
+}
+
+.btnMenu div {
+  width: 2rem;
+  height: 0.2rem;
+  background: var(--cor-5);
+  position: relative;
+  border-radius: 0.2rem;
+}
+
+.btnMenu div::before {
+  position: absolute;
+  display: block;
+  content: '';
+  background: var(--cor-5);
+  width: 70%;
+  height: 0.2rem;
+  border-radius: 0.2rem;
+  top: -0.5rem;
 }

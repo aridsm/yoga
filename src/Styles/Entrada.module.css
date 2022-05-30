@@ -165,4 +165,36 @@
     text-align: center;
     margin-top: 4rem;
   }
+
+  .endereco {
+    position: relative;
+    left: 0;
+  }
+}
+
+@media all and (max-width: 380px) {
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .ul {
+    grid-template-columns: 1fr;
+  }
+
+  .listaNumeros li {
+    padding: .5rem;
+    font-size: 0.8rem;
+  }
+
+  .numero {
+    font-size: 1.2rem;
+  }
+
+
+  .listaNumeros li+li {
+    margin-left: .5rem;
+  }
 }

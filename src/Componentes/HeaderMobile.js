@@ -7,7 +7,9 @@ const HeaderMobile = () => {
 
   return (
     <>
-      <button className={styles.btnMenu} onClick={() => setIsMenuOpen(!isMenuOpen)}>...</button>
+      <button className={styles.btnMenu} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <div></div>
+      </button>
       {
         isMenuOpen &&
         <nav className={styles.navItens}>

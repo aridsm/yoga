@@ -8,8 +8,8 @@ const Planos = () => {
 
   const [itensAtATime, setItensAtATime] = React.useState(3)
   const { slideNext, slidePrev, positionWidth, containerSlideRef, setSlidePosition } = useSlide(itensAtATime)
-  const matchMedium = useMedia('(max-width: 800px)')
-  const matchSmall = useMedia('(max-width: 550px)')
+  const matchMedium = useMedia('(max-width: 800px)').matches
+  const matchSmall = useMedia('(max-width: 550px)').matches
 
   React.useEffect(() => {
     function changeItensAtATime() {
@@ -21,6 +21,8 @@ const Planos = () => {
         setItensAtATime(3)
       }
     }
+    setSlidePosition(0)
+    changeItensAtATime()
     window.addEventListener('resize', changeItensAtATime)
     return () => {
       window.removeEventListener('resize', changeItensAtATime)

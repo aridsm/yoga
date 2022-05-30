@@ -1,4 +1,5 @@
 import React from 'react'
+import useMedia from '../CustomHooks/useMedia'
 import useSlide from '../CustomHooks/useSlide'
 import styles from '../Styles/Instrutores.module.css'
 
@@ -39,7 +40,32 @@ const instrutores = [
 
 const Instrutores = () => {
 
-  const { slideNext, slidePrev, positionWidth, containerSlideRef } = useSlide(4)
+  const [itensAtATime, setItensAtATime] = React.useState(4)
+  const { slideNext, slidePrev, positionWidth, containerSlideRef, setSlidePosition } = useSlide(itensAtATime)
+  const matchMedium = useMedia('(max-width: 800px)').matches
+  const matchSmall = useMedia('(max-width: 550px)').matches
+  const matchExtraSmall = useMedia('(max-width: 390px)').matches
+
+  React.useEffect(() => {
+    function changeItensAtATime() {
+      if (matchExtraSmall) {
+        setItensAtATime(1)
+      } else if (matchSmall) {
+        setItensAtATime(2)
+      } else if (matchMedium) {
+        setItensAtATime(3)
+      } else {
+        setItensAtATime(4)
+      }
+    }
+    setSlidePosition(0)
+    changeItensAtATime()
+    window.addEventListener('resize', changeItensAtATime)
+    return () => {
+      window.removeEventListener('resize', changeItensAtATime)
+    }
+
+  }, [matchMedium, matchSmall, setSlidePosition, matchExtraSmall])
 
   return (
     <section className={`container ${styles.instrutores}`}>
