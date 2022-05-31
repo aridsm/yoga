@@ -15,37 +15,68 @@
   height: 2rem;
   position: relative;
   z-index: 99999;
+  background: blue;
 }
 
 .navItens {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
+  opacity: 0;
   background: var(--cor-5);
   color: var(--cor-1);
   display: grid;
   grid-template-columns: auto;
   grid-gap: 1rem;
   text-align: center;
-  padding: 2rem 3rem;
-  z-index: 9999;
+  padding: 5rem 3rem;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  align-content: center;
+  animation: anima 1s ease-in-out forwards;
+  animation-delay: -.5s;
+  font-size: 1.2rem;
+}
+
+@keyframes anima {
+  to {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 .btnMenu div {
-  width: 2rem;
   height: 0.2rem;
-  background: var(--cor-5);
   position: relative;
   border-radius: 0.2rem;
+  background: var(--cor-5);
+  transition: .7s;
+
 }
 
-.btnMenu div::before {
-  position: absolute;
-  display: block;
-  content: '';
-  background: var(--cor-5);
+.btnMenu div:nth-of-type(1) {
+  width: 2rem;
+}
+
+.btnMenu div:nth-of-type(2) {
   width: 70%;
-  height: 0.2rem;
-  border-radius: 0.2rem;
-  top: -0.5rem;
+  top: 0.5rem;
+}
+
+.btnMenu.active div {
+  z-index: 9999;
+  background: var(--cor-1);
+}
+
+.btnMenu.active div:nth-of-type(1) {
+  width: 2rem;
+  transform: rotate(45deg);
+
+}
+
+.btnMenu.active div:nth-of-type(2) {
+  transform: rotate(-45deg);
+  width: 2rem;
+  top: -.2rem
 }

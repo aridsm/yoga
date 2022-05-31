@@ -6,7 +6,13 @@
   width: 100%;
   padding: 0 0.7rem;
   margin: 0 auto;
-  position: relative;
+}
+
+.header {
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  transition: .5s;
 }
 
 .nav {
@@ -15,4 +21,11 @@
   grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
   height: 6rem;
+}
+
+.headerScrolled {
+  background: rgba(250, 250, 247, 0.95);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.185);
 }
