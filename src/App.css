@@ -16,9 +16,6 @@
   --text-1: #583f5c;
   --text-2: #35584e;
   --text-3: #696541;
-  --sombra-1: #c294c9b3;
-  --sombra-2: #90c5b5cc;
-  --sombra-3: rgba(68, 65, 40, 0.25);
   font-family: 'Quicksand', sans-serif;
   font-size: 0.9rem;
   color: var(--cor-5);
@@ -50,11 +47,12 @@ button {
   color: var(--cor-1);
   padding: 0.7rem 1.2rem;
   border-radius: .2rem;
-
+  transition: .2s;
 }
 
 .btnPreto:hover {
   background: radial-gradient(70% 100% at 50% 0%, #5d6361 0%, #383e41 100%);
+  box-shadow: 0 0 0 3px #e0a8e9b3;
 }
 
 .container {

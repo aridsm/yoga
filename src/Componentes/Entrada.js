@@ -5,10 +5,6 @@ import fotoEntrada from '../assets/entrada.jpg'
 const Entrada = () => {
   return (
     <section className={`container ${styles.entrada}`}>
-      <div className={styles.endereco}>
-        <span>Lorem Ipsum - IP</span>
-        <span>Dolor sit - Lorem, 111</span>
-      </div>
       <div className={styles.content}>
         <div className={styles.textos}>
           <h1 className={styles.titulo}>Lorem ipsum dolor sit amet</h1>
@@ -31,6 +27,10 @@ const Entrada = () => {
         </ul>
       </div>
       <div className={styles.imgContainer}>
+        <div className={styles.endereco}>
+          <span>Lorem Ipsum - IP</span>
+          <span>Dolor sit - Lorem, 111</span>
+        </div>
         <div className={styles.img}>
           <img src={fotoEntrada} alt='Mulher meditando'></img>
         </div>

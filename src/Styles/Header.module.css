@@ -13,6 +13,9 @@
   z-index: 99999;
   width: 100%;
   transition: .5s;
+  height: 6rem;
+  display: flex;
+  align-items: center;
 }
 
 .nav {
@@ -20,7 +23,6 @@
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
-  height: 6rem;
 }
 
 .headerScrolled {
@@ -28,4 +30,11 @@
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.185);
+  height: 4rem;
+}
+
+@media all and (max-width:1150px) {
+  .headerScrolled {
+    height: 6rem;
+  }
 }
