@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/yoga/static/css/main.400cdf64.css",
+    "main.js": "/yoga/static/js/main.09cc0fcd.js",
+    "static/media/carac.jpg": "/yoga/static/media/carac.989cebae47f2b3eb581b.jpg",
+    "static/media/entrada.jpg": "/yoga/static/media/entrada.3f83f22d9db9dca1f40f.jpg",
+    "static/media/pc.jpg": "/yoga/static/media/pc.b9743ab1043b9230c5fe.jpg",
+    "static/media/bg.svg": "/yoga/static/media/bg.5dc9707bfc7134de75d1.svg",
+    "index.html": "/yoga/index.html",
+    "main.400cdf64.css.map": "/yoga/static/css/main.400cdf64.css.map",
+    "main.09cc0fcd.js.map": "/yoga/static/js/main.09cc0fcd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.400cdf64.css",
+    "static/js/main.09cc0fcd.js"
+  ]
+}
