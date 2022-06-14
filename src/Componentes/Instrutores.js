@@ -71,8 +71,8 @@ const Instrutores = () => {
     <section className={`container ${styles.instrutores}`}>
       <h2>Conheça os instrutores</h2>
       <div className={styles.btns}>
-        <button onClick={slidePrev}>Anterior</button>
-        <button onClick={slideNext}>Proximo</button>
+        <button onClick={slidePrev} aria-label='instrutor anterior'>Anterior</button>
+        <button onClick={slideNext} aria-label='proximo instrutor'>Proximo</button>
       </div>
       <div className={styles.containerInstrutores}>
         <ul className={styles.listaInstrutores} ref={containerSlideRef} style={{ left: `${positionWidth}px` }} >

@@ -26,7 +26,7 @@ const HeaderMobile = () => {
 
   return (
     <>
-      <button className={`${styles.btnMenu} ${isMenuOpen ? styles.active : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)} ref={refBtnClick}>
+      <button className={`${styles.btnMenu} ${isMenuOpen ? styles.active : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)} ref={refBtnClick} aria-label='menu mobile'>
         <div></div>
         <div></div>
       </button>

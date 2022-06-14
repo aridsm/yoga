@@ -35,8 +35,8 @@ const Planos = () => {
       <header className={styles.header}>
         <h2>Nossos planos</h2>
         <div className={styles.btns}>
-          <button onClick={slidePrev}>Anterior</button>
-          <button onClick={slideNext}>Proximo</button>
+          <button onClick={slidePrev} aria-label='plano anterior'>Anterior</button>
+          <button onClick={slideNext} aria-label='proximo plano'>Proximo</button>
         </div>
       </header>
       <div className={styles.containerPlanos}>
