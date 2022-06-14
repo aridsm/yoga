@@ -19,5 +19,11 @@
 
   margin: 0 auto;
   width: 3rem;
+  height: auto;
   text-align: center;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%
 }
