@@ -3,6 +3,7 @@ import styles from '../Styles/Entrada.module.css'
 import fotoEntrada from '../assets/entrada.jpg'
 
 const Entrada = () => {
+
   return (
     <section className={`container ${styles.entrada}`}>
       <div className={styles.content}>
@@ -32,7 +33,7 @@ const Entrada = () => {
           <span>Dolor sit - Lorem, 111</span>
         </div>
         <div className={styles.img}>
-          <img src={fotoEntrada} alt='Mulher meditando'></img>
+          <img src={fotoEntrada} alt='Mulher meditando' width='19rem' height='27rem'></img>
         </div>
       </div>
     </section>
