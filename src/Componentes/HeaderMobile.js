@@ -4,42 +4,23 @@ import styles from '../Styles/HeaderMobile.module.css'
 
 const HeaderMobile = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
-  const refBtnClick = React.useRef()
-  const refNavClick = React.useRef()
-
-  React.useEffect(() => {
-    function clickOutside({ target }) {
-      function containsElement(el) {
-        return el.current.contains(target)
-      }
-      if (!containsElement(refBtnClick) && (refNavClick && !containsElement(refNavClick))) {
-        setIsMenuOpen(false);
-
-        console.log('botao contem o target')
-      }
-    }
-    window.addEventListener('click', clickOutside)
-    return () => {
-      window.removeEventListener('click', clickOutside)
-    }
-  }, [])
 
   return (
     <>
-      <button className={`${styles.btnMenu} ${isMenuOpen ? styles.active : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)} ref={refBtnClick} aria-label='menu mobile'>
+      <button className={`${styles.btnMenu} ${isMenuOpen ? styles.active : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label='menu mobile'>
         <div></div>
         <div></div>
       </button>
       {
         isMenuOpen &&
-        <nav className={styles.navItens} ref={refNavClick}>
+        <nav className={styles.navItens}>
           <a href='/'>Home</a>
           <a href='/'>Aulas</a>
           <a href='/'>Instrutores</a>
           <a href='/'>Modalidades</a>
           <a href='/'>Sobre</a>
           <a href='/'>Contato</a>
-          <a href='/'>Area do usuario</a>
+          <a href='/'>Área do usuário</a>
         </nav>
       }
       <a href='/' className={styles.logo}><img src={logo} alt='logo'></img></a>

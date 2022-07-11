@@ -2,6 +2,20 @@ import React from 'react'
 import styles from '../Styles/Entrada.module.css'
 import fotoEntrada from '../assets/entrada.jpg'
 
+const cards = [
+  {
+    titulo: 'Instrutores especializados',
+    valor: 12
+  },
+  {
+    titulo: 'Aulas gravadas',
+    valor: 218
+  },
+  {
+    titulo: 'Alunos matriculados',
+    valor: 342
+  }
+]
 const Entrada = () => {
 
   return (
@@ -10,21 +24,15 @@ const Entrada = () => {
         <div className={styles.textos}>
           <h1 className={styles.titulo}>Lorem ipsum dolor sit amet</h1>
           <p>Cras rhoncus rhoncus mi nec suscipit. Fusce at mi nec nunc condimentum volutpat. Nulla sit amet mi velit.</p>
-          <a href='/' className={`btnPreto`}>Comece o teste gratis de 7 dias</a>
+          <a href='/' className={`btnPreto`}>Comece o teste grátis de 7 dias</a>
         </div>
         <ul className={styles.listaNumeros}>
-          <li>
-            <p className={styles.numero}>12</p>
-            <p>Instrutores especializados</p>
-          </li>
-          <li>
-            <p className={styles.numero}>218</p>
-            <p>Aulas gravadas</p>
-          </li>
-          <li>
-            <p className={styles.numero}>342</p>
-            <p>alunos matriculados</p>
-          </li>
+          {cards.map(card =>
+            <li key={card.titulo}>
+              <p className={styles.numero}>{card.valor}</p>
+              <p>{card.titulo}</p>
+            </li>
+          )}
         </ul>
       </div>
       <div className={styles.imgContainer}>

@@ -4,6 +4,25 @@ import styles from '../Styles/Planos.module.css'
 import Plano from './Plano'
 import useMedia from '../CustomHooks/useMedia'
 
+const planos = [
+  {
+    preco: 159.00,
+    nome: 'Yoga'
+  },
+  {
+    preco: 319.00,
+    nome: 'Completo'
+  },
+  {
+    preco: 129.00,
+    nome: 'Pilates'
+  },
+  {
+    preco: 109.00,
+    nome: 'Meditaçao'
+  }
+];
+
 const Planos = () => {
 
   const [itensAtATime, setItensAtATime] = React.useState(3)
@@ -36,18 +55,17 @@ const Planos = () => {
         <h2>Nossos planos</h2>
         <div className={styles.btns}>
           <button onClick={slidePrev} aria-label='plano anterior'>Anterior</button>
-          <button onClick={slideNext} aria-label='proximo plano'>Proximo</button>
+          <button onClick={slideNext} aria-label='proximo plano'>Próximo</button>
         </div>
       </header>
       <div className={styles.containerPlanos}>
         <ul className={styles.listaPlanos} style={{ left: `${positionWidth}px` }} ref={containerSlideRef}>
-          <Plano preco='159,00' plano='Yoga' />
-          <Plano preco='319,00' plano='Completo' />
-          <Plano preco='129,00' plano='Pilates' />
-          <Plano preco='109,00' plano='Meditaçao' />
+          {planos.map(plano =>
+            <Plano plano={plano.nome} preco={plano.preco} key={plano.nome} />
+          )}
         </ul>
       </div>
-      <a href='/' className={`btnPreto ${styles.linkComecar}`}>Comece o teste de 7 dias gratis</a>
+      <a href='/' className={`btnPreto ${styles.linkComecar}`}>Comece o teste de 7 dias grátis</a>
     </section >
   )
 }

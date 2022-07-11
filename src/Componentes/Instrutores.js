@@ -10,7 +10,7 @@ const instrutores = [
     img: 'inst1.jpg'
   },
   {
-    nome: 'Jessica',
+    nome: 'Jéssica',
     descricao: 'Maecenas eget ultricies enim',
     img: 'inst2.jpg'
   },
@@ -25,7 +25,7 @@ const instrutores = [
     img: 'inst4.jpg'
   },
   {
-    nome: 'Livia',
+    nome: 'Lívia',
     descricao: 'Maecenas eget ultricies enim',
     img: 'inst5.jpg'
   },
@@ -35,8 +35,6 @@ const instrutores = [
     img: 'inst6.jpg'
   },
 ]
-
-
 
 const Instrutores = () => {
 
@@ -72,14 +70,14 @@ const Instrutores = () => {
       <h2>Conheça os instrutores</h2>
       <div className={styles.btns}>
         <button onClick={slidePrev} aria-label='instrutor anterior'>Anterior</button>
-        <button onClick={slideNext} aria-label='proximo instrutor'>Proximo</button>
+        <button onClick={slideNext} aria-label='proximo instrutor'>Próximo</button>
       </div>
       <div className={styles.containerInstrutores}>
         <ul className={styles.listaInstrutores} ref={containerSlideRef} style={{ left: `${positionWidth}px` }} >
           {instrutores.map(instrutor => (
             <li key={instrutor.nome}>
               <a href='/'>
-                <img src={instrutor.img} alt={instrutor.nome} className={styles.img}></img>
+                <img src={require(`../assets/${instrutor.img}`)} alt={instrutor.nome} className={styles.img}></img>
                 <p className={styles.nome}>{instrutor.nome}</p>
                 <p>{instrutor.descricao}dsd</p>
               </a>
