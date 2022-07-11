@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/yoga/static/css/main.d4830baf.css",
-    "main.js": "/yoga/static/js/main.83769b02.js",
+    "main.css": "/yoga/static/css/main.dd2ada04.css",
+    "main.js": "/yoga/static/js/main.faab7016.js",
     "static/media/carac.jpg": "/yoga/static/media/carac.989cebae47f2b3eb581b.jpg",
     "static/media/entrada.jpg": "/yoga/static/media/entrada.3f83f22d9db9dca1f40f.jpg",
     "static/media/pc.jpg": "/yoga/static/media/pc.b9743ab1043b9230c5fe.jpg",
+    "static/media/inst5.jpg": "/yoga/static/media/inst5.b70b97257a5c38e3f75e.jpg",
+    "static/media/inst6.jpg": "/yoga/static/media/inst6.1fd57efd8d1d7e312489.jpg",
+    "static/media/inst3.jpg": "/yoga/static/media/inst3.105d90bc2ac28aa9db9a.jpg",
+    "static/media/inst2.jpg": "/yoga/static/media/inst2.92b5dcfe8108145ac4c6.jpg",
     "static/media/bg.svg": "/yoga/static/media/bg.afe1b2e98a0be2bbbf27.svg",
     "index.html": "/yoga/index.html",
-    "main.d4830baf.css.map": "/yoga/static/css/main.d4830baf.css.map",
-    "main.83769b02.js.map": "/yoga/static/js/main.83769b02.js.map"
+    "main.dd2ada04.css.map": "/yoga/static/css/main.dd2ada04.css.map",
+    "main.faab7016.js.map": "/yoga/static/js/main.faab7016.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4830baf.css",
-    "static/js/main.83769b02.js"
+    "static/css/main.dd2ada04.css",
+    "static/js/main.faab7016.js"
   ]
 }
